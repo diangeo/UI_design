@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  height: auto;
+}
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.custom-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  width: 250px;
+  font-size: 18px;
+  border: none;
+  background-color: #d70040;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #800020;
+}
+
+/* .btn {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  margin: 10px;
+} */
+
+/* .message {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+} */
+
+.message {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  background-image: linear-gradient(
+    to right top,
+    #ebd7d9,
+    #eedad4,
+    #edded1,
+    #e8e3d1,
+    #dfe9d6
+  );
+  ing: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  text-align: center;
+}
+
+.btn:hover + .message {
+  opacity: 1;
+  z-index: 1;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+  margin: 90px 0px 0px 90px;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+  margin: 90px 90px 0px 0px;
+}
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  margin: 0px 90px 90px 0px;
+}
+.bottom-left {
+  bottom: 0;
+  left: 0;
+  margin: 0px 0px 90px 90px;
+}
+
+table {
+  margin: 5px;
+  font: italic 1.2em "Fira Sans", serif;
+}
+th,
+td {
+  padding: 10px;
+}
+/* h1 {
+  color: white;
+} */
+.header {
+  font-family: "Times New Roman", Times, serif;
+  /* background-image: radial-gradient(circle, #44ed07, #ee4b2b); */
+  color: white;
+  /* background-clip: text; */
+  /* -webkit-background-clip: text; */
+}
+
+svg {
+  position: relative;
+}
+
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
